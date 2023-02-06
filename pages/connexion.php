@@ -44,8 +44,7 @@ if (isset($_POST['login'])){
   $rows = mysqli_num_rows($result);
   if($rows==1){
       $_SESSION['login'] = $login;
-      header("Location: ../pages/profil.php");
-     
+      header("Location: profil.php");
       
   }else{
     $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
@@ -67,8 +66,8 @@ if (isset($_POST['login'])){
   }else{
     $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
   }
-}
-*/
+} */
+
 
 ?>
 <div class="containerform">
